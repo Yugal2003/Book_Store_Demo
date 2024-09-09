@@ -1,0 +1,504 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Mysterious Case",
+      "description": "A thrilling mystery novel.",
+      "author": "John Smith",
+      "pages": 320,
+      "category": "Mystery",
+      "price": 20,
+      "releasedYear": 2021
+    },
+    {
+      "id": "2",
+      "title": "Life of Legends",
+      "description": "An insightful biography.",
+      "author": "Michael Brown",
+      "pages": 400,
+      "category": "History",
+      "price": 23,
+      "releasedYear": 2010
+    },
+    {
+      "title": "dfdf",
+      "author": "hg",
+      "description": "hhg",
+      "pages": 78,
+      "category": "jk",
+      "price": 8989,
+      "releasedYear": 90,
+      "id": "3"
+    },
+    {
+      "title": "Galactic Ody",
+      "author": "Emily Dav",
+      "description": "A captivating science fiction adventures",
+      "pages": 200,
+      "category": "Ghost",
+      "price": 30,
+      "releasedYear": 2024,
+      "id": "4"
+    },
+    {
+      "title": "Lorum ipsum",
+      "author": "manish",
+      "description": "paper Zone",
+      "pages": 40,
+      "category": "Ghost",
+      "price": 120,
+      "releasedYear": 2024,
+      "id": "5"
+    },
+    {
+      "id": "6",
+      "title": "The Art of Cooking",
+      "description": "A guide to modern cooking techniques.",
+      "author": "Jessica Miller",
+      "pages": 220,
+      "category": "Cookbook",
+      "price": 25,
+      "releasedYear": 2017
+    },
+    {
+      "id": "7",
+      "title": "Beyond the Stars",
+      "description": "An exploration of space and the cosmos.",
+      "author": "Daniel Moore",
+      "pages": 50,
+      "category": "Science",
+      "price": 21,
+      "releasedYear": 2015
+    },
+    {
+      "id": "8",
+      "title": "Mind Games",
+      "description": "A gripping psychological thriller.",
+      "author": "Laura Taylor",
+      "pages": 310,
+      "category": "Thriller",
+      "price": 22,
+      "releasedYear": 2020
+    },
+    {
+      "id": "9",
+      "title": "Whispers of Fiction",
+      "description": "A collection of short stories.",
+      "author": "James Anderson",
+      "pages": 30,
+      "category": "Fiction",
+      "price": 15,
+      "releasedYear": 2001
+    },
+    {
+      "id": "10",
+      "title": "Finance 101",
+      "description": "An introduction to personal finance.",
+      "author": "Karen Thomas",
+      "pages": 70,
+      "category": "Finance",
+      "price": 18,
+      "releasedYear": 2018
+    },
+    {
+      "id": "11",
+      "title": "Gardener's Delight",
+      "description": "A comprehensive guide to gardening.",
+      "author": "Richard Lee",
+      "pages": 20,
+      "category": "Gardening",
+      "price": 23,
+      "releasedYear": 2022
+    },
+    {
+      "id": "12",
+      "title": "Marketing Mastery",
+      "description": "A guide to digital marketing strategies.",
+      "author": "Emily Walker",
+      "pages": 300,
+      "category": "Business",
+      "price": 20,
+      "releasedYear": 2015
+    },
+    {
+      "id": "13",
+      "title": "Survival Stories",
+      "description": "A story of adventure and survival.",
+      "author": "Robert Hall",
+      "pages": 30,
+      "category": "Adventure",
+      "price": 19,
+      "releasedYear": 2016
+    },
+    {
+      "id": "14",
+      "title": "Climate Chronicles",
+      "description": "An in-depth analysis of climate change.",
+      "author": "Linda Scott",
+      "pages": 50,
+      "category": "Environment",
+      "price": 24,
+      "releasedYear": 2019
+    },
+    {
+      "id": "15",
+      "title": "Negotiation Skills",
+      "description": "A book about the art of negotiation.",
+      "author": "James Young",
+      "pages": 80,
+      "category": "Self-Help",
+      "price": 17,
+      "releasedYear": 2018
+    },
+    {
+      "id": "16",
+      "title": "Ancient Wonders",
+      "description": "A journey through ancient civilizations.",
+      "author": "Patricia Harris",
+      "pages": 390,
+      "category": "History",
+      "price": 26,
+      "releasedYear": 2021
+    },
+    {
+      "id": "17",
+      "title": "Modern Humor",
+      "description": "A humorous take on modern life.",
+      "author": "Thomas Clark",
+      "pages": 270,
+      "category": "Humor",
+      "price": 18,
+      "releasedYear": 2020
+    },
+    {
+      "id": "18",
+      "title": "Mind and Behavior",
+      "description": "A deep dive into human psychology.",
+      "author": "Nancy Lewis",
+      "pages": 320,
+      "category": "Psychology",
+      "price": 23,
+      "releasedYear": 2015
+    },
+    {
+      "id": "19",
+      "title": "Photography Essentials",
+      "description": "A detailed guide to photography techniques.",
+      "author": "Michael Robinson",
+      "pages": 300,
+      "category": "Photography",
+      "price": 21,
+      "releasedYear": 2018
+    },
+    {
+      "id": "20",
+      "title": "Inspirational Moments",
+      "description": "A collection of inspirational quotes.",
+      "author": "Jessica Wright",
+      "pages": 150,
+      "category": "Inspirational",
+      "price": 15,
+      "releasedYear": 2019
+    },
+    {
+      "id": "21",
+      "title": "Love's Journey",
+      "description": "A novel about love and loss.",
+      "author": "William Martinez",
+      "pages": 310,
+      "category": "Romance",
+      "price": 19,
+      "releasedYear": 2001
+    },
+    {
+      "id": "22",
+      "title": "Public Speaking Mastery",
+      "description": "A guide to improving your public speaking skills.",
+      "author": "Elizabeth Hall",
+      "pages": 280,
+      "category": "Self-Help",
+      "price": 17,
+      "releasedYear": 2020
+    },
+    {
+      "id": "23",
+      "title": "Genetics Unveiled",
+      "description": "An exploration of human genetics.",
+      "author": "David Evans",
+      "pages": 90,
+      "category": "Science",
+      "price": 25,
+      "releasedYear": 2022
+    },
+    {
+      "id": "24",
+      "title": "Espionage Secrets",
+      "description": "A gripping tale of espionage.",
+      "author": "Lisa King",
+      "pages": 30,
+      "category": "Thriller",
+      "price": 20,
+      "releasedYear": 2018
+    },
+    {
+      "id": "25",
+      "title": "Painting Basics",
+      "description": "A beginner's guide to painting.",
+      "author": "John Lee",
+      "pages": 22,
+      "category": "Art",
+      "price": 16,
+      "releasedYear": 2019
+    },
+    {
+      "id": "26",
+      "title": "Resilience and Hope",
+      "description": "A story of resilience and hope.",
+      "author": "Jennifer Scott",
+      "pages": 90,
+      "category": "Fiction",
+      "price": 18,
+      "releasedYear": 2021
+    },
+    {
+      "id": "27",
+      "title": "Yoga for Beginners",
+      "description": "A comprehensive guide to yoga practice.",
+      "author": "Andrew Green",
+      "pages": 270,
+      "category": "Health",
+      "price": 21,
+      "releasedYear": 2020
+    },
+    {
+      "id": "28",
+      "title": "Digital Revolution",
+      "description": "An exploration of digital transformation.",
+      "author": "Susan Adams",
+      "pages": 310,
+      "category": "Business",
+      "price": 24,
+      "releasedYear": 2019
+    },
+    {
+      "id": "29",
+      "title": "Fast Lane Life",
+      "description": "A memoir of a life lived in the fast lane.",
+      "author": "George Carter",
+      "pages": 330,
+      "category": "Biography",
+      "price": 19,
+      "releasedYear": 2021
+    },
+    {
+      "id": "30",
+      "title": "Dystopian Dreams",
+      "description": "A novel set in a dystopian future.",
+      "author": "Rebecca Mitchell",
+      "pages": 0,
+      "category": "Science Fiction",
+      "price": 23,
+      "releasedYear": 2022
+    },
+    {
+      "id": "31",
+      "title": "Baking Perfection",
+      "description": "A guide to mastering the art of baking.",
+      "author": "Karen Nelson",
+      "pages": 280,
+      "category": "Cookbook",
+      "price": 20,
+      "releasedYear": 2020
+    },
+    {
+      "id": "32",
+      "title": "Tech Impact",
+      "description": "A study of the impact of technology on society.",
+      "author": "Mark King",
+      "pages": 30,
+      "category": "Technology",
+      "price": 22,
+      "releasedYear": 2019
+    },
+    {
+      "id": "33",
+      "title": "Secrets of the Ocean",
+      "description": "An exploration of marine biology.",
+      "author": "Sophia Martinez",
+      "pages": 310,
+      "category": "Science",
+      "price": 20,
+      "releasedYear": 2001
+    },
+    {
+      "id": "34",
+      "title": "Timeless Classics",
+      "description": "A collection of classic literature.",
+      "author": "Lucas Harris",
+      "pages": 40,
+      "category": "Literature",
+      "price": 25,
+      "releasedYear": 2015
+    },
+    {
+      "id": "35",
+      "title": "World Cultures",
+      "description": "An introduction to world cultures.",
+      "author": "Natalie Clark",
+      "pages": 330,
+      "category": "Culture",
+      "price": 21,
+      "releasedYear": 2001
+    },
+    {
+      "id": "36",
+      "title": "Mystery Unraveled",
+      "description": "A thrilling mystery that keeps you guessing.",
+      "author": "James Thompson",
+      "pages": 320,
+      "category": "Mystery",
+      "price": 18,
+      "releasedYear": 2019
+    },
+    {
+      "id": "37",
+      "title": "Artistic Expressions",
+      "description": "A guide to various art forms.",
+      "author": "Laura Evans",
+      "pages": 270,
+      "category": "Art",
+      "price": 17,
+      "releasedYear": 2020
+    },
+    {
+      "id": "38",
+      "title": "Adventure Awaits",
+      "description": "A novel about thrilling adventures.",
+      "author": "John Scott",
+      "pages": 40,
+      "category": "Adventure",
+      "price": 19,
+      "releasedYear": 2021
+    },
+    {
+      "id": "39",
+      "title": "The Business Mind",
+      "description": "Strategies for success in business.",
+      "author": "Emily Walker",
+      "pages": 300,
+      "category": "Business",
+      "price": 23,
+      "releasedYear": 2018
+    },
+    {
+      "id": "40",
+      "title": "Exploring Nature",
+      "description": "A guide to the natural world.",
+      "author": "Michael Wright",
+      "pages": 0,
+      "category": "Nature",
+      "price": 20,
+      "releasedYear": 2022
+    },
+    {
+      "id": "41",
+      "title": "Love and Light",
+      "description": "A romance novel with a positive twist.",
+      "author": "Sophia Clark",
+      "pages": 70,
+      "category": "Romance",
+      "price": 19,
+      "releasedYear": 2020
+    },
+    {
+      "id": "42",
+      "title": "Technology Trends",
+      "description": "An overview of current tech trends.",
+      "author": "Daniel Green",
+      "pages": 10,
+      "category": "Technology",
+      "price": 21,
+      "releasedYear": 2021
+    },
+    {
+      "id": "43",
+      "title": "Personal Growth",
+      "description": "A guide to personal development.",
+      "author": "Alice Johnson",
+      "pages": 280,
+      "category": "Self-Help",
+      "price": 17,
+      "releasedYear": 2019
+    },
+    {
+      "id": "44",
+      "title": "Culinary Delights",
+      "description": "Exploring world cuisines.",
+      "author": "Robert Adams",
+      "pages": 300,
+      "category": "Cookbook",
+      "price": 23,
+      "releasedYear": 2018
+    },
+    {
+      "id": "45",
+      "title": "Science Mysteries",
+      "description": "Uncovering the secrets of the universe.",
+      "author": "Linda Mitchell",
+      "pages": 330,
+      "category": "Science",
+      "price": 22,
+      "releasedYear": 2022
+    },
+    {
+      "id": "46",
+      "title": "The Hidden Truth",
+      "description": "A suspenseful thriller.",
+      "author": "James Brown",
+      "pages": 340,
+      "category": "Thriller",
+      "price": 20,
+      "releasedYear": 2021
+    },
+    {
+      "id": "47",
+      "title": "Historical Figures",
+      "description": "Biographies of significant historical figures.",
+      "author": "Emily White",
+      "pages": 320,
+      "category": "Biography",
+      "price": 19,
+      "releasedYear": 2020
+    },
+    {
+      "id": "48",
+      "title": "Inspiration Daily",
+      "description": "Daily inspiration to uplift your spirit.",
+      "author": "Sophia Adams",
+      "pages": 10,
+      "category": "Inspirational",
+      "price": 15,
+      "releasedYear": 2019
+    },
+    {
+      "id": "49",
+      "title": "Future Visions",
+      "description": "A look into possible futures.",
+      "author": "Michael Johnson",
+      "pages": 310,
+      "category": "Science Fiction",
+      "price": 22,
+      "releasedYear": 2015
+    },
+    {
+      "id": "50",
+      "title": "The Master Chef",
+      "description": "A chef's guide to culinary excellence.",
+      "author": "Karen Wilson",
+      "pages": 0,
+      "category": "Cookbook",
+      "price": 18,
+      "releasedYear": 2001
+    }
+  ]
+}
