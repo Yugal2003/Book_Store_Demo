@@ -63,51 +63,51 @@ const UpdateData = ({fetchBooks}) => {
 
 
     const updateByBookName = async () => {
-        const bookName = prompt('Enter the Book Name:');
-        if (!bookName){
-            alert("Please Enter Book Name!")
-            return;
-        }
-    
-    try {
+          const bookName = prompt('Enter the Book Name:');
+          if (!bookName){
+              alert("Please Enter Book Name!")
+              return;
+          }
+      
+      try {
 
-        const response = await axios.get(apiUrl);
-        const books = response.data;
+          const response = await axios.get(apiUrl);
+          const books = response.data;
 
-        const book = books.find(b => b.title.toLowerCase() === bookName.toLowerCase());
+          const book = books.find(b => b.title.toLowerCase() === bookName.toLowerCase());
 
-        if (!book) {
-            alert("Book not found!");
-            return;
-        }
+          if (!book) {
+              alert("Book not found!");
+              return;
+          }
 
-        // const isString = !bookName.split('').some(char => !isNaN(char));
-        // if (!isString) {
-        //   alert("Please Enter Character Only !");
-        //   return;
-        // }
+          // const isString = !bookName.split('').some(char => !isNaN(char));
+          // if (!isString) {
+          //   alert("Please Enter Character Only !");
+          //   return;
+          // }
 
-        const updateData = prompt('Enter Updated book format: Title,Author,Description,Pages,Category,Price,ReleasedYear');
-        if (!updateData) return;
+          const updateData = prompt('Enter Updated book format: Title,Author,Description,Pages,Category,Price,ReleasedYear');
+          if (!updateData) return;
 
-        const [title, author, description, pages, category, price, releasedYear] = updateData.split(',');
+          const [title, author, description, pages, category, price, releasedYear] = updateData.split(',');
 
-        const updatedBook = {
-            title: title.trim(),
-            author: author.trim(),
-            description: description.trim(),
-            pages: parseInt(pages.trim(), 10),
-            category: category.trim(),
-            price: parseFloat(price.trim()),
-            releasedYear: parseInt(releasedYear.trim(), 10)
-        };
+          const updatedBook = {
+              title: title.trim(),
+              author: author.trim(),
+              description: description.trim(),
+              pages: parseInt(pages.trim(), 10),
+              category: category.trim(),
+              price: parseFloat(price.trim()),
+              releasedYear: parseInt(releasedYear.trim(), 10)
+          };
 
-        await axios.put(`${apiUrl}/${book.id}`, updatedBook);
-        fetchBooks();
+          await axios.put(`${apiUrl}/${book.id}`, updatedBook);
+          fetchBooks();
 
-    } catch (error) {
-        console.error('Error fetching or updating book:', error);
-    }
+      } catch (error) {
+          console.error('Error fetching or updating book:', error);
+      }
     };
     const updateBookByNameAndAuthor = async () =>{
         const bookNameAndAuthor = prompt('Enter Book Name & Author (comma-separated)');
@@ -129,7 +129,7 @@ const UpdateData = ({fetchBooks}) => {
         if (!isBookNameString || !isAuthorString) {
           alert("Please Enter Character Only !");
           return;
-}
+        }
 
         try {
           const response = await axios.get(apiUrl);

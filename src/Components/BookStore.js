@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { MdLocalGroceryStore } from "react-icons/md";
-// import { FaEdit } from "react-icons/fa";
-// import { MdDelete } from "react-icons/md";
 import axios from 'axios';
 import UpdateData from './UpdateData';
 import DeleteData from './DeleteData';
+import SortData from './SortData';
+import ShowData from './ShowData';
 
 const BookStore = () => {
   const [books, setBooks] = useState([]);
@@ -14,17 +14,32 @@ const BookStore = () => {
     fetchBooks();
   }, []);
 
-  const fetchBooks = async () => {
-    try {
-      const response = await axios.get(apiUrl);
-      console.log(response.data);
+  // const fetchBooks = async () => {
+  //   try {
+  //     const response = await axios.get(apiUrl);
+  //     console.log(response.data);
       
-      setBooks(response.data);
+  //     setBooks(response.data);
+  //   } catch (error) {
+  //     console.error('Error fetching data:', error);
+  //   }
+  // };
+
+
+  // new chnage code for fetchbooks
+  const fetchBooks = async (sortedBooks = null) => {
+    try {
+      if (sortedBooks) {
+        setBooks(sortedBooks);
+      } else {
+        const response = await axios.get(apiUrl);
+        setBooks(response.data);
+      }
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
-
+  
   return (
     <div>
       <div className="w-[80%] my-2 mx-auto flex flex-row items-center justify-between">
@@ -34,7 +49,9 @@ const BookStore = () => {
 
       {/* button list start */}
       <UpdateData fetchBooks={fetchBooks}/><br/><br/>
-      <DeleteData/>
+      <DeleteData fetchBooks={fetchBooks}/><br/><br/>
+      <SortData   fetchBooks={fetchBooks}/><br/><br/>
+      <ShowData   fetchBooks={fetchBooks}/>
       {/* button list end */}
       <br/>
       {/* data start */}
@@ -80,12 +97,6 @@ const BookStore = () => {
                 <td className="border-4 border-black">
                   <p className="text-center text-sm sm:text-lg font-semibold">{book.releasedYear}</p>
                 </td>
-                {/* <td className="border-4 border-black">
-                  <FaEdit style={{cursor:"pointer"}} size={20}/>
-                </td>
-                <td className="border-4 border-black">
-                  <MdDelete style={{cursor:"pointer"}} size={20}/>
-                </td> */}
               </tr>
             )) : (
               <tr>
