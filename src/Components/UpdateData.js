@@ -19,42 +19,58 @@ const UpdateData = ({fetchBooks}) => {
             alert("Enter id is Not Found !")
             return;
         }
-    
-        const updateData = prompt('Enter Updated book format: Title,Author,Description,Pages,Category,Price,ReleasedYear');
-        if (!updateData) return;
-    
-        const [title, author, description, pages, category, price, releasedYear] = updateData.split(',');
-    
-        const updatedBook = {
-          title: title.trim(),
-          author: author.trim(),
-          description: description.trim(),
-          pages: parseInt(pages.trim(), 10),
-          category: category.trim(),
-          price: parseFloat(price.trim()),
-          releasedYear: parseInt(releasedYear.trim(), 10)
-        };
-    
         try {
+
+          const response = await axios.get(apiUrl);
+          const books = response.data;
+    
+          const numericBookId = parseInt(bookId, 10);
+    
+          if (isNaN(numericBookId)) {
+            alert('Please enter a valid number for Book ID!');
+            return;
+          }
+    
+          const book = books.find((b) => parseInt(b.id, 10) === numericBookId); 
+
+          if (!book) {
+            alert('Book Not Found!');
+            return;
+          }
+
+          const updateData = prompt('Enter Updated book format: Title,Author,Description,Pages,Category,Price,ReleasedYear');
+          if (!updateData) return;
+      
+          const [title, author, description, pages, category, price, releasedYear] = updateData.split(',');
+      
+          const updatedBook = {
+            title: title.trim(),
+            author: author.trim(),
+            description: description.trim(),
+            pages: parseInt(pages.trim(), 10),
+            category: category.trim(),
+            price: parseFloat(price.trim()),
+            releasedYear: parseInt(releasedYear.trim(), 10)
+          };
+    
+       
           await axios.put(`${apiUrl}/${bookId}`, updatedBook);
           fetchBooks(); 
         } catch (error) {
           console.error('Error updating book:', error);
         }
     };
-    const updateBookByName = async () => {
+
+
+    const updateByBookName = async () => {
         const bookName = prompt('Enter the Book Name:');
         if (!bookName){
             alert("Please Enter Book Name!")
             return;
         }
-        const isString = !bookName.split('').some(char => !isNaN(char));
-        if (!isString) {
-        alert("Please Enter Character Only !");
-        return;
-    }
     
     try {
+
         const response = await axios.get(apiUrl);
         const books = response.data;
 
@@ -64,6 +80,12 @@ const UpdateData = ({fetchBooks}) => {
             alert("Book not found!");
             return;
         }
+
+        // const isString = !bookName.split('').some(char => !isNaN(char));
+        // if (!isString) {
+        //   alert("Please Enter Character Only !");
+        //   return;
+        // }
 
         const updateData = prompt('Enter Updated book format: Title,Author,Description,Pages,Category,Price,ReleasedYear');
         if (!updateData) return;
@@ -148,7 +170,7 @@ const UpdateData = ({fetchBooks}) => {
   return (
     <div>
         <button onClick={updateBookById}>Update Book by ID</button>
-        <button onClick={updateBookByName}>Update By Name</button>
+        <button onClick={updateByBookName}>Update By Book Name</button>
         <button onClick={updateBookByNameAndAuthor}>Update By Name And Author</button>
     </div>
   )

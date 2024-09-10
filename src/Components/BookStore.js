@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { MdLocalGroceryStore } from "react-icons/md";
-import { FaEdit } from "react-icons/fa";
-import { MdDelete } from "react-icons/md";
+// import { FaEdit } from "react-icons/fa";
+// import { MdDelete } from "react-icons/md";
 import axios from 'axios';
 import UpdateData from './UpdateData';
+import DeleteData from './DeleteData';
 
 const BookStore = () => {
   const [books, setBooks] = useState([]);
@@ -32,7 +33,8 @@ const BookStore = () => {
       <br />
 
       {/* button list start */}
-      <UpdateData fetchBooks={fetchBooks}/>
+      <UpdateData fetchBooks={fetchBooks}/><br/><br/>
+      <DeleteData/>
       {/* button list end */}
       <br/>
       {/* data start */}
@@ -78,12 +80,12 @@ const BookStore = () => {
                 <td className="border-4 border-black">
                   <p className="text-center text-sm sm:text-lg font-semibold">{book.releasedYear}</p>
                 </td>
-                <td className="border-4 border-black">
+                {/* <td className="border-4 border-black">
                   <FaEdit style={{cursor:"pointer"}} size={20}/>
                 </td>
                 <td className="border-4 border-black">
                   <MdDelete style={{cursor:"pointer"}} size={20}/>
-                </td>
+                </td> */}
               </tr>
             )) : (
               <tr>
