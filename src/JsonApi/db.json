@@ -14,21 +14,21 @@
       "id": "2",
       "title": "Life of Legends",
       "description": "An insightful biography.",
-      "author": "Sarah Johnson",
-      "pages": 250,
+      "author": "Sarah khan",
+      "pages": "200",
       "category": "Biography",
-      "price": 16,
-      "releasedYear": 2001
+      "price": "400",
+      "releasedYear": "2023"
     },
     {
       "id": "3",
-      "title": "Echoes of History",
-      "description": "A deep dive into ancient history.",
-      "author": "Michael Brown",
-      "pages": 400,
-      "category": "History",
-      "price": 23,
-      "releasedYear": 2018
+      "title": "Echoes of MCA",
+      "description": "A deep dive into ancient BCA",
+      "author": "Brain Gayle lara",
+      "pages": "80",
+      "category": "React",
+      "price": "160",
+      "releasedYear": "2025"
     },
     {
       "id": "4",
@@ -502,23 +502,13 @@
     },
     {
       "id": "51",
-      "title": "Hello",
-      "description": "World",
-      "author": "W3schools",
-      "pages": "300",
-      "category": "BCA",
-      "price": "200",
-      "releasedYear": "2024"
-    },
-    {
-      "id": "52",
-      "title": "ABCD",
-      "description": "EFGH",
-      "author": "IJKL",
-      "pages": "22",
-      "category": "MNOP",
-      "price": "44",
-      "releasedYear": "66"
+      "title": "re",
+      "description": "re",
+      "author": "re",
+      "pages": "23",
+      "category": "re",
+      "price": "23",
+      "releasedYear": "2023"
     }
   ]
 }

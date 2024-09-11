@@ -89,6 +89,7 @@ const BookStore = () => {
           <button 
             className='border border-black px-2 py-1 rounded-md mr-16' 
             onClick={() => setShowAddBook(true)}
+            id='btnAddNewBook'
           >
             Add New Book
           </button>
