@@ -1,15 +1,16 @@
 import React, { useEffect, useState } from 'react';
-// import { MdLocalGroceryStore } from "react-icons/md";
 import { FaBook } from "react-icons/fa6";
 import axios from 'axios';
 import UpdateData from './UpdateData';
 import DeleteData from './DeleteData';
 import SortData from './SortData';
 import ShowData from './ShowData';
+import AddBook from './AddBook'; // Import the AddBook component
 
 const BookStore = () => {
   const [books, setBooks] = useState([]);
-  const [searchTerm, setSearchTerm] = useState(''); // State to capture the search input
+  const [searchTerm, setSearchTerm] = useState('');
+  const [showAddBook, setShowAddBook] = useState(false); // State to manage form visibility
   const apiUrl = 'http://localhost:3002/books';
 
   useEffect(() => {
@@ -74,7 +75,7 @@ const BookStore = () => {
             type='text'
             placeholder='Search by Title, Pages, Price, Year...'
             value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)} // Capture search input
+            onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
       </div>
@@ -83,12 +84,25 @@ const BookStore = () => {
       {/* button list start */}
       <div className='border-4 border-y-black px-8 py-6'>
         <UpdateData fetchBooks={fetchBooks} />
-        <DeleteData fetchBooks={fetchBooks} />
+        <div className='flex flex-row justify-between items-center'>
+          <DeleteData fetchBooks={fetchBooks} />
+          <button 
+            className='border border-black px-2 py-1 rounded-md mr-16' 
+            onClick={() => setShowAddBook(true)}
+          >
+            Add New Book
+          </button>
+        </div>
         <SortData fetchBooks={fetchBooks} />
         <ShowData fetchBooks={fetchBooks} />
       </div>
       {/* button list end */}
       <br />
+
+      {/* Show AddBook form if showAddBook is true */}
+      {showAddBook && (
+        <AddBook fetchBooks={fetchBooks} setShowAddBook={setShowAddBook} />
+      )}
 
       {/* data start */}
       <div className="overflow-x-auto">
@@ -107,7 +121,7 @@ const BookStore = () => {
           </thead>
           <tbody className="border-4 border-black">
             {filteredBooks.length >= 1 ? (
-              pagePerItem.map((book, index) => (
+              pagePerItem.map((book) => (
                 <tr key={book.id}>
                   <td className="border-4 border-black">
                     <p className="w-20 h-20 sm:w-24 sm:h-24 md:w-14 md:h-6 lg:w-32 lg:h-16 mx-auto text-xl flex flex-row justify-center items-center text-center">{book.id}</p>

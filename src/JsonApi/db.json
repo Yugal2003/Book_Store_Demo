@@ -40,15 +40,15 @@
       "price": 19,
       "releasedYear": 2020
     },
-    { 
-      "id": 5, 
-      "title": "Love's Echoes", 
-      "description": "A heartfelt romance story.", 
-      "author": "David Wilson", 
-      "pages": 280, 
-      "category": "Romance", 
-      "price": 17, 
-      "releasedYear": 2022 
+    {
+      "id": 5,
+      "title": "Love's Echoes",
+      "description": "A heartfelt romance story.",
+      "author": "David Wilson",
+      "pages": 280,
+      "category": "Romance",
+      "price": 17,
+      "releasedYear": 2022
     },
     {
       "id": "6",
@@ -499,6 +499,26 @@
       "category": "Cookbook",
       "price": 18,
       "releasedYear": 2021
+    },
+    {
+      "id": "51",
+      "title": "Hello",
+      "description": "World",
+      "author": "W3schools",
+      "pages": "300",
+      "category": "BCA",
+      "price": "200",
+      "releasedYear": "2024"
+    },
+    {
+      "id": "52",
+      "title": "ABCD",
+      "description": "EFGH",
+      "author": "IJKL",
+      "pages": "22",
+      "category": "MNOP",
+      "price": "44",
+      "releasedYear": "66"
     }
   ]
 }
