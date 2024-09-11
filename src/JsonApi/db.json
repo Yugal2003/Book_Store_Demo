@@ -1,14 +1,14 @@
 {
   "books": [
     {
-      "id": "1",
       "title": "The Mysterious Case",
-      "description": "A thrilling mystery novel.",
-      "author": "John Smith",
+      "author": "A thrilling mystery novel.",
+      "description": "John Smith",
       "pages": 320,
       "category": "Mystery",
-      "price": 20,
-      "releasedYear": 2001
+      "price": 10,
+      "releasedYear": 2001,
+      "id": "1"
     },
     {
       "id": "2",
@@ -20,15 +20,15 @@
       "price": 16,
       "releasedYear": 2001
     },
-    { 
-      "id": 3,
-      "title": "Echoes of History", 
-      "description": "A deep dive into ancient history.", 
-      "author": "Michael Brown", 
-      "pages": 400, 
-      "category": "History", 
+    {
+      "id": "3",
+      "title": "Echoes of History",
+      "description": "A deep dive into ancient history.",
+      "author": "Michael Brown",
+      "pages": 400,
+      "category": "History",
       "price": 23,
-      "releasedYear": 2018 
+      "releasedYear": 2018
     },
     {
       "id": "4",
@@ -40,15 +40,15 @@
       "price": 19,
       "releasedYear": 2020
     },
-    {
-      "id": "5",
-      "title": "Love's Echoes",
-      "description": "A heartfelt romance story.",
-      "author": "David Wilson",
-      "pages": 20,
-      "category": "Romance",
-      "price": 17,
-      "releasedYear": 2022
+    { 
+      "id": 5, 
+      "title": "Love's Echoes", 
+      "description": "A heartfelt romance story.", 
+      "author": "David Wilson", 
+      "pages": 280, 
+      "category": "Romance", 
+      "price": 17, 
+      "releasedYear": 2022 
     },
     {
       "id": "6",
