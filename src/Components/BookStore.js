@@ -5,12 +5,12 @@ import UpdateData from './UpdateData';
 import DeleteData from './DeleteData';
 import SortData from './SortData';
 import ShowData from './ShowData';
-import AddBook from './AddBook'; // Import the AddBook component
+import AddBook from './AddBook'; 
 
 const BookStore = () => {
   const [books, setBooks] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [showAddBook, setShowAddBook] = useState(false); // State to manage form visibility
+  const [showAddBook, setShowAddBook] = useState(false); 
   const apiUrl = 'http://localhost:3002/books';
 
   useEffect(() => {
@@ -23,6 +23,8 @@ const BookStore = () => {
         setBooks(sortedBooks);
       } else {
         const response = await axios.get(apiUrl);
+        console.log(response.data);
+        
         setBooks(response.data);
       }
     } catch (error) {

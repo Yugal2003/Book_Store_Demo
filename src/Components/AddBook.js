@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AddBook = ({ fetchBooks, setShowAddBook }) => {
   const [formData, setFormData] = useState({
-    id: '', // ID field for user input
+    id: '', 
     title: '',
     description: '',
     author: '',
@@ -21,7 +21,7 @@ const AddBook = ({ fetchBooks, setShowAddBook }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3002/books', formData); // Send form data including user-defined ID
+      await axios.post('http://localhost:3002/books', formData); 
       fetchBooks(); // Refresh the book list
       setShowAddBook(false); // Hide the form
     } catch (error) {
