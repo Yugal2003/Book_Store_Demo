@@ -54,13 +54,13 @@ const SortData = ({ fetchBooks }) => {
   };
 
   return (
-    <div>
-      <button onClick={sortByBookName}>Sort Book By Name</button>
-      <button onClick={sortByBookPrice}>Sort Book by Price</button>
-      <button onClick={sortByBookAuthor}>Sort Book by Author</button>
-      <button onClick={sortBookNoOfPages}>Sort Book by Number of Pages</button>
-      <button onClick={sortByBookCategory}>Sort Book by Category</button>
-      <button onClick={sortByBookReleYear}>Sort Book by Released Year</button>
+    <div className='flex flex-row justify-start items-center gap-10 mb-3'>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortByBookName}>Sort Book By Name</button>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortByBookPrice}>Sort Book by Price</button>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortByBookAuthor}>Sort Book by Author</button>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortBookNoOfPages}>Sort Book by Number of Pages</button>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortByBookCategory}>Sort Book by Category</button>
+      <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={sortByBookReleYear}>Sort Book by Released Year</button>
     </div>
   );
 };

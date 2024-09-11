@@ -1,0 +1,12 @@
+.active-page {
+    background-color: red;
+    color: white;
+}
+#btn-next:hover{
+    background-color: red;
+    color: white;
+}
+#btn-prev:hover{
+    background-color: red;
+    color: white;
+}

@@ -172,16 +172,20 @@ const showBooksReleasedFiftnAndOne = async () => {
 };
 
 return (
-    <div>
-      <button onClick={showAllBooks}>Show All</button>
-      <button onClick={showBooksById}>Show Book by Id</button>
-      <button onClick={showBooksByBookName}>Show Book by Name</button>
-      <button onClick={showBooksByNameAndAuthor}>Show Book by Name & Author</button>
-      <button onClick={showBooksPagesMoreThanHundred}>Show Book pages More than 100</button>
-      <button onClick={showBooksPagesLessNinAndMoreThanTwe}>Show Book pages Less than 90 More than 25</button>
-      <button onClick={showBooksPagesLessNinAndMoreThanTweNotEigh}>Show Book pages Less than 90 More than 25 But not 80</button>
-      <button onClick={showBooksPagesZero}>Show Book pages Zero</button>
-      <button onClick={showBooksReleasedFiftnAndOne}>Show Book Released Year 2015 And 2001</button>
+  <div className='flex flex-col justify-start items-center gap-3'>
+      <div className='flex flex-row justify-start items-center gap-10 w-[100%]'>
+        <button className='px-auto border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showAllBooks}>Show All</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksById}>Show Book by Id</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksByBookName}>Show Book by Name</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksByNameAndAuthor}>Show Book by Name & Author</button>
+      </div>
+      <div className='flex flex-row justify-start items-center gap-10 w-[100%]'>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksPagesMoreThanHundred}>Show Book pages More than 100</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksPagesLessNinAndMoreThanTwe}>Show Book pages Less than 90 More than 25</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksPagesLessNinAndMoreThanTweNotEigh}>Show Book pages Less than 90 More than 25 But not 80</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksPagesZero}>Show Book pages Zero</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={showBooksReleasedFiftnAndOne}>Show Book Released Year 2015 And 2001</button>
+      </div>
     </div>
   );
 };

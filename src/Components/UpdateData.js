@@ -168,10 +168,10 @@ const UpdateData = ({fetchBooks}) => {
         }
     } 
   return (
-    <div>
-        <button onClick={updateBookById}>Update Book by ID</button>
-        <button onClick={updateByBookName}>Update By Book Name</button>
-        <button onClick={updateBookByNameAndAuthor}>Update By Name And Author</button>
+    <div className='flex flex-row justify-start items-center gap-10 mb-3'>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={updateBookById}>Update Book by ID</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={updateByBookName}>Update By Book Name</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={updateBookByNameAndAuthor}>Update By Name And Author</button>
     </div>
   )
 }

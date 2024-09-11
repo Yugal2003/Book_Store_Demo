@@ -148,11 +148,11 @@ const DeleteData = ({fetchBooks}) => {
     };
     
   return (
-    <div>
-        <button onClick={deleteBookById}>Delete Book By Book ID</button>
-        <button onClick={deleteByBookName}>Delete Book By Book Name</button>
-        <button onClick={deleteBookByAuthorAndDescription}>Delete Book By Book Author and Book Description</button>
-        <button onClick={deleteByBookNameAndCategory}>Delete Book by Book Name and Book Category.</button>
+    <div className='flex flex-row justify-start items-center gap-10 mb-3'>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={deleteBookById}>Delete Book By Book ID</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={deleteByBookName}>Delete Book By Book Name</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={deleteBookByAuthorAndDescription}>Delete Book By Book Author and Book Description</button>
+        <button className='border-none bg-green-500 text-white text-base cursor-pointer px-2 py-2 rounded-md font-bold' onClick={deleteByBookNameAndCategory}>Delete Book by Book Name and Book Category.</button>
     </div>
   )
 }
